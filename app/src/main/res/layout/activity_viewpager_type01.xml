@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.onboarding.Viewpager_type_Activity_01">
+
+    <LinearLayout
+        android:id="@+id/type1_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:contentDescription="@string/toda"
+            android:src="@drawable/bottle_img" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_donor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type1_img"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:text="@string/donor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_donor"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text="@string/lorem_txt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:backgroundTint="@color/transparent"
+        android:fontFamily="@font/opensans_bold"
+        android:contentDescription="@string/todooo"
+        android:text="@string/next"
+        android:textColor="@color/l_red" />
+
+</RelativeLayout>

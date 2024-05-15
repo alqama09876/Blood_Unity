@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.Be_A_Donor_Fragment">
+
+        <TextView
+            android:id="@+id/tv_be_donor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/be_A_donor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp" />
+
+        <EditText
+            android:id="@+id/edt_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/tv_be_donor"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/custom_edt"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/edt_full_name"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/custom_edt"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/edt_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/edt_city"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/custom_edt"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/loc"
+            android:inputType="text"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/edt_imageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/edt_location"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/custom_edt"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/ImageUrl"
+            android:inputType="text"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/edt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/edt_imageUrl"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/custom_edt"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="@string/contact"
+            android:inputType="number"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColorHint="@color/black"
+            tools:ignore="RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/tv_blood_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_contact"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/select_blood_group"
+            android:textSize="@dimen/_16ssp" />
+
+        <GridLayout
+            android:id="@+id/gv_blood_groups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_blood_group"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:columnCount="6"
+            android:rowCount="2"
+            tools:ignore="UselessLeaf">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Apos"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/A_pos"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Aneg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/A_neg"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Bneg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/B_neg"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Bpos"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/B_pos"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Opos"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/O_pos"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Oneg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/O_neg"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ABneg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/AB_neg"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ABpos"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/custom_bgroups"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/AB_pos"
+                android:textColor="@color/black" />
+        </GridLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_blood_groups"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_btnsubmit"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingStart="@dimen/_40sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            tools:ignore="VisualLintButtonSize" />
+
+    </RelativeLayout>
+</ScrollView>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:shape="rectangle">-->
+    <!--<solid android:color="@color/white" />-->
+    <!--<corners android:radius="@dimen/_12sdp" />-->
+    <!--<stroke-->
+    <!--    android:width="@dimen/_1sdp"-->
+    <!--    android:color="@color/black" />-->
+
+    <!--</shape>-->
+
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spn_gender"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_45sdp"-->
+    <!--android:layout_below="@+id/edt_dbirth"-->
+    <!--android:layout_marginStart="@dimen/_20sdp"-->
+    <!--android:layout_marginTop="@dimen/_15sdp"-->
+    <!--android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--android:background="@drawable/custom_edt"-->
+    <!--android:fontFamily="@font/opensans_semibold"-->
+    <!--android:paddingStart="@dimen/_15sdp"-->
+    <!--tools:ignore="RtlSymmetry" />-->
+
+
+    <!--Gender AutoCompleteTextview -->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+    <!--android:id="@+id/txt_input_layout_act"-->
+    <!--style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/edt_dbirth"-->
+    <!--android:layout_marginStart="@dimen/_20sdp"-->
+    <!--android:layout_marginTop="@dimen/_15sdp"-->
+    <!--android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--android:hint="@string/gender"-->
+    <!--android:textColorHint="@color/black"-->
+    <!--app:boxStrokeColor="@color/red"-->
+    <!--app:hintTextColor="@color/gray">-->
+
+    <!--<AutoCompleteTextView-->
+    <!--    android:id="@+id/txtInput_act_gender"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:inputType="none"-->
+    <!--    android:fontFamily="@font/opensans_regular"-->
+    <!--    android:textColor="@color/gray"-->
+    <!--    android:paddingStart="@dimen/_15sdp"-->
+    <!--    tools:ignore="RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--// GENDER EDITTEXT-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/edt_gender"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_45sdp"-->
+    <!--            android:layout_below="@id/edt_dbirth"-->
+    <!--            android:layout_marginStart="@dimen/_20sdp"-->
+    <!--            android:layout_marginTop="@dimen/_15sdp"-->
+    <!--            android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--            android:autofillHints="creditCardExpirationDate"-->
+    <!--            android:background="@drawable/custom_edt"-->
+    <!--            android:drawableEnd="@drawable/dropdown_arrow"-->
+    <!--            android:fontFamily="@font/opensans_regular"-->
+    <!--            android:hint="@string/gender"-->
+    <!--            android:inputType="text"-->
+    <!--            android:paddingStart="@dimen/_15sdp"-->
+    <!--            android:paddingEnd="@dimen/_15sdp"-->
+    <!--            android:textColorHint="@color/black"-->
+    <!--            tools:ignore="RtlSymmetry" />-->
+
+
+    <!--<androidx.appcompat.widget.AppCompatImageButton-->
+    <!--android:id="@+id/btn_prev"-->
+    <!--android:layout_width="@dimen/_45sdp"-->
+    <!--android:layout_height="@dimen/_45sdp"-->
+    <!--android:layout_marginTop="@dimen/_10sdp"-->
+    <!--android:background="@color/white"-->
+    <!--android:src="@drawable/previous_btn"-->
+    <!--tools:ignore="SpeakableTextPresentCheck" />-->
+
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spn_gender"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_45sdp"-->
+    <!--android:layout_below="@id/edt_city"-->
+    <!--android:layout_marginStart="@dimen/_20sdp"-->
+    <!--android:layout_marginTop="@dimen/_15sdp"-->
+    <!--android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--android:background="@drawable/custom_edt"-->
+    <!--android:paddingStart="@dimen/_10sdp"-->
+    <!--tools:ignore="RtlSymmetry" />-->

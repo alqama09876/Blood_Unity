@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BloodUnity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/red</item>
+
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+
+    <!--    Animation set on BottomSheet...-->
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+
+    <!-- for Light Theme-->
+
+    <!--    Background-->
+    <style name="SCREEN">
+        <item name="background">@color/white</item>
+    </style>
+
+    <!--    Text-->
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BACKGROUND">
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <!--    Button-->
+    <style name="BUTTON">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.BloodUnity" parent="Base.Theme.BloodUnity" />
+</resources>

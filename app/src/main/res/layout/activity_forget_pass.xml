@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Forget_Pass_Activity">
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/custom_prebtn"
+        android:contentDescription="@string/tood"
+        android:src="@drawable/previous_btn" />
+
+    <TextView
+        android:id="@+id/f_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/F_pass_txt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30ssp" />
+
+    <TextView
+        android:id="@+id/tv_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/f_pass"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/ent_email"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_12ssp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_email"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone_no"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:hint="@string/email"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/red"
+        app:hintTextColor="@color/gray"
+        app:startIconDrawable="@drawable/email"
+        app:startIconTint="@color/red">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_input_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_input_layout_email"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@color/red"
+        android:fontFamily="@font/poppins"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+</RelativeLayout>
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+    <!--android:id="@+id/txt_input_layout_forget_password"-->
+    <!--style="@style/Widget.Material3.TextInputLayout.OutlinedBox"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tv_phone_no"-->
+    <!--android:layout_marginStart="@dimen/_15sdp"-->
+    <!--android:layout_marginTop="@dimen/_15sdp"-->
+    <!--android:layout_marginEnd="@dimen/_15sdp"-->
+    <!--app:prefixText="+92"-->
+    <!--app:prefixTextColor="@color/gray"-->
+    <!--app:endIconCheckable="true"-->
+    <!--android:hint="@string/phone_no"-->
+    <!--android:textColorHint="@color/gray"-->
+    <!--app:boxStrokeColor="@color/red"-->
+    <!--app:hintTextColor="@color/gray"-->
+    <!--app:startIconDrawable="@drawable/phone"-->
+    <!--app:startIconTint="@color/red">-->
+
+    <!--<com.google.android.material.textfield.TextInputEditText-->
+    <!--    android:id="@+id/txtInput_edt_forget_password"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:inputType="number"-->
+    <!--    android:textColor="@color/gray"-->
+    <!--    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />-->
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--    app:helperText="Required**"-->
+    <!--    app:helperTextEnabled="true"-->
+    <!--    app:helperTextTextColor="@color/red"-->

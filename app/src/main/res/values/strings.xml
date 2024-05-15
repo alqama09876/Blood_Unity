@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">BloodUnity</string>
+    <string name="todo">TODO</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="f_password">Forget Password</string>
+    <string name="email_hint">Email</string>
+    <string name="application_name">Blood Unity</string>
+    <string name="password_hint">Password</string>
+    <string name="welcome_txt">Welcome Back!</string>
+    <string name="app_name_txt">BloodUnity</string>
+    <string name="or">OR</string>
+    <string name="Todo">TODO</string>
+    <string name="already_have_an_acc">Already have an account!</string>
+    <string name="do_you_have_an_acc">Do you have an account?</string>
+    <string name="signup">Signup</string>
+    <string name="fodo">TODO</string>
+    <string name="create_txt">Create An Account</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="F_pass_txt">Forget\nPassword</string>
+    <string name="phoneno_txt">Enter Your Phone</string>
+    <string name="next">NEXT</string>
+    <string name="tood">TODO</string>
+    <string name="phone_no">Phone Number</string>
+    <string name="ent_phone_no">Enter Your Phone Number</string>
+    <string name="otp_txt">An OTP code is send to your phone. Enter it here:</string>
+    <string name="otp_code">Enter OTP Code</string>
+    <string name="todooo">TODO</string>
+    <string name="donor">Find A Donor</string>
+    <string name="toda">TODO</string>
+    <string name="lorem_txt">Lorem ipsum dolor sit amet, consectetur froti adipiscing elit, sed do eiusmod tempor incididunt.</string>
+    <string name="prev">PREV</string>
+    <string name="plz_register">Create an account!</string>
+    <string name="donate_blood">Donate Blood</string>
+    <string name="become_donor">Be A Blood Donor</string>
+    <string name="donor_subtxt"><![CDATA[Become A Blood Donor & Save Lives]]></string>
+    <string name="get_started">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="find_donor">Find Donor</string>
+    <string name="profile">Profile</string>
+    <string name="be_a_donor">Be A Donor</string>
+    <string name="be_A_donor">Be A Donor</string>
+    <string name="full_name">Full Name</string>
+    <string name="ent_full_name">Enter Your Full Name</string>
+    <string name="dbirth">Date Of Birth</string>
+    <string name="weight">Body Weight (in Kg)</string>
+    <string name="contact">Contact Number</string>
+    <string name="select_blood_group">Select Blood Group</string>
+    <string name="A_pos">A+</string>
+    <string name="A_neg">A-</string>
+    <string name="B_neg">B-</string>
+    <string name="B_pos">B+</string>
+    <string name="O_pos">O+</string>
+    <string name="O_neg">O-</string>
+    <string name="AB_neg">AB-</string>
+    <string name="AB_pos">AB+</string>
+    <string name="submit">Submit</string>
+    <string name="country">Country</string>
+    <string name="ent_country">Enter Your Country</string>
+    <string name="gender">Gender</string>
+    <string name="ent_email">Enter Your Email</string>
+    <string name="logout">LOGOUT</string>
+    <string name="location">Enter Your Location</string>
+    <string name="search">SEARCH</string>
+    <string name="reset">RESET</string>
+    <string name="otp_verification_txt">OTP Verification</string>
+    <string name="otp_ver_txt">Please Enter the OTP sent to you</string>
+    <string name="todoo">TODO</string>
+    <string name="didn_t_recieve_the_otp">Didn\'t recieve the otp</string>
+    <string name="resend_otp">RESEND OTP AGAIN</string>
+    <string name="otptxt">We will send you an one time opt on this given mobile number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_92">+92</string>
+    <string name="_0000000000">0000000000</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="verify">Verify</string>
+    <string name="title_activity_google_map">Google_Map_Activity</string>
+    <string name="city">City</string>
+    <string name="f_name">Full Name:</string>
+    <string name="col_email">Email:</string>
+    <string name="col_phone_no">Phone Number:</string>
+    <string name="col_city">City:</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="col_blood_type">Blood Type:</string>
+    <string name="contact_donor">Contact Donor</string>
+    <string name="loc">Location</string>
+    <string name="tado">TODO</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="call">Call</string>
+    <string name="tadoo">TODO</string>
+    <string name="theme_light_dark">Theme (Light / Dark)</string>
+    <string name="Location">Location</string>
+    <string name="ImageUrl">Image Url</string>
+    <string name="request_donor">Request For Blood</string>
+    <string name="patient">Patient</string>
+    <string name="patient_name">Enter Patient Name</string>
+    <string name="Request">Request Donor</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+
+    <!--    Gender items array...-->
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--    Blood-type array...-->
+    <string-array name="bloodtype_options">
+        <item>Select Blood Type</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+</resources>

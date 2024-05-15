@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.otp.Otp_Verification_Activity2">
+
+    <ImageButton
+        android:id="@+id/btn_opt_previous"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/custom_prebtn"
+        android:contentDescription="@string/tood"
+        android:src="@drawable/previous_btn" />
+
+    <ImageView
+        android:id="@+id/email_icon"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_below="@id/btn_opt_previous"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todoo"
+        android:src="@drawable/email_icon" />
+
+    <TextView
+        android:id="@+id/otp_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_icon"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/opensans_bold"
+        android:text="@string/otp_verification_txt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22ssp" />
+
+    <TextView
+        android:id="@+id/tv_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_verification"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/otp_ver_txt"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <LinearLayout
+        android:id="@+id/ll_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_number"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/edt5"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/edt6"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_edt"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="end"
+            android:text="@string/didn_t_recieve_the_otp"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="start"
+            android:text="@string/resend_otp"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_btn"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/custom_otp_btns"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        <ProgressBar
+            android:id="@+id/pgBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+    <!--android:id="@+id/txt_input_layout_forget_otp_password"-->
+    <!--style="@style/Widget.Material3.TextInputLayout.OutlinedBox"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tv_otp"-->
+    <!--android:layout_marginStart="@dimen/_15sdp"-->
+    <!--android:layout_marginTop="@dimen/_20sdp"-->
+    <!--android:layout_marginEnd="@dimen/_15sdp"-->
+    <!--android:hint="@string/otp_code"-->
+    <!--android:textColorHint="@color/gray"-->
+    <!--app:boxStrokeColor="@color/red"-->
+    <!--app:counterEnabled="true"-->
+    <!--app:counterMaxLength="5"-->
+    <!--app:counterTextColor="@color/red"-->
+    <!--app:helperTextTextColor="@color/red"-->
+    <!--app:hintTextColor="@color/gray"-->
+    <!--app:startIconDrawable="@drawable/email"-->
+    <!--app:startIconTint="@color/red">-->
+
+    <!--<com.google.android.material.textfield.TextInputEditText-->
+    <!--    android:id="@+id/txtInput_edt_forget_otp_password"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:inputType="number"-->
+    <!--    android:maxLength="5"-->
+    <!--    android:textColor="@color/gray"-->
+    <!--    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--<GridLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="@dimen/_40sdp"-->
+    <!--android:layout_marginEnd="@dimen/_40sdp"-->
+    <!--android:columnCount="5"-->
+    <!--android:rowCount="1"-->
+    <!--tools:ignore="UselessParent">-->
